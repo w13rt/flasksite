@@ -24,3 +24,10 @@ Because its kind of an inetersting selution, we manually have to add collums and
 `flask db migrate -m "followers"`
 #### Update
 `flask db update`
+
+# colors
+#361d32
+#543c52
+#f55951
+#edd2cb
+#f1e8e6

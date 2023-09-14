@@ -1,0 +1,5 @@
+lijst = ['dog ', 'ket ',' False']
+
+for lijs in lijst:
+	print('Greetings ' + lijs)
+

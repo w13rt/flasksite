@@ -1,0 +1,14 @@
+'''
+asks for name and for age
+then prints it backto yuo
+'''
+#ask name
+name = input('whats your name? ')
+
+#ask age
+age = input('how old are you? ')
+
+#print result
+print('your name is ' + name + ' and you are ' + age + ' years old')
+
+
