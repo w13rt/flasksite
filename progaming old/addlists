@@ -1,8 +1,0 @@
-list0 = [1, 2, 3]
-list1 = [4, 5, 6]
-
-list2 = list0 + list1
-
-for li in list2:
-	print(li)
-
