@@ -12,16 +12,16 @@
 	</head>
 	
     <body id="grad1">
-        <div class="kutflexnav">
-            <div id="grad4" class="navbar">
-                <div class="flex-container-nav">
-                    <div class="navpadding"><a class="anav" href="{{ url_for('index') }}">Home</a></div>
-                    <div class="navpadding"><a href="{{ url_for('explore') }}">Explore</a></div>
+        <div class="kutflexnav1">
+            <div id="grad4" class="navbar2">
+                <div class="flex-container-nav3">
+                    <div class="navpadding4"><a class="anav" href="{{ url_for('index') }}">Home</a></div>
+                    <div class="navpadding4"><a href="{{ url_for('explore') }}">Explore</a></div>
                     {% if current_user.is_anonymous %}
-                        <div class="navpadding"><a href="{{ url_for('login') }}">Login</a></div>
+                        <div class="navpadding4"><a href="{{ url_for('login') }}">Login</a></div>
                     {% else %}
-                        <div class="navpadding"><a href="{{ url_for('user', username=current_user.username) }}">Profile</a></div>
-                        <div class="navpadding"><a href="{{ url_for('logout') }}">Logout</a></div>
+                        <div class="navpadding4"><a href="{{ url_for('user', username=current_user.username) }}">Profile</a></div>
+                        <div class="navpadding4"><a href="{{ url_for('logout') }}">Logout</a></div>
                      {% endif %}
                 </div>
             </div>

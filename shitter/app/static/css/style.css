@@ -3,7 +3,55 @@ body {
     text-align: center;
     font-family: "Audiowide", sans-serif;
     color: #543c52;
+    min-height: 100vh;
+    margin-bottom: 30px;
 }
+
+textarea {
+    background: #f1e8e6;
+    resize: vertical;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 4px;
+    font-family: "Audiowide", sans-serif;
+    max-width: 65%;
+}
+
+
+input[type=text] {
+    background-color: #f1e8e6;
+
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #543c52;
+    border: none;
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px;
+    height: 30px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+input:hover {
+    background-color: #af9b96 ;
+}
+
+.formpost p{
+    
+   margin: 0;
+}
+
+br{
+    height: 23px;
+}
+
 
 h3 {
     font-size: 15px;
@@ -22,33 +70,40 @@ b {
 
 }
 
-.kutflexnav {
+.kutflexnav1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar {
+.navbar2 {
     color: #edd2cb;
     width: 60%;
     min-width: 500px;
     border: #f1e8e6;
     border-style: solid;
     border-radius: 25px;
+    border-width: 1px;
+
 }
 
-.flex-container-nav {
+.flex-container-nav3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 30px;
     padding: 4px;
+    border-radius: 25px;
+    margin: 3px;
 }
 
-.navpadding {
+.navpadding4 {
     padding: 2px;
-    transition: border-radius 0.05s ease-in;
+    border-radius: 20px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+
 }
 
 a {
@@ -57,20 +112,23 @@ a {
     color: #543c52;
 }
 
+.navbar2 a {
 
-
-.navpadding:hover {
-    color: #f1e8e6;
-    background-image: radial-gradient(#f55951, #edd2cb);
-    border-color: #543c52;
-    border-style: solid;
+    transition: all 0.1s ease-in;
+    border-color: transparent;
     border-radius: 25px;
+    border-style: solid;
     max-height: 50%;
     margin-top: -3px;
     margin-bottom: -3px;
-    padding: 4px;
+    padding: 3px;
     border-width: 1px;
-    
+}
+
+.navbar2 a:hover {
+    border-color: #543c52;
+    background-image: radial-gradient(#f55951, #edd2cb);
+
 
 }
 
@@ -88,13 +146,26 @@ a {
     height: inherit;
 }
 
+.userpagepf {
+    padding: 10px;
+}
+
+.pfandname {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-top: 5px;
+    
+}
+
 .post {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    
+
 
 }
 
@@ -117,19 +188,19 @@ a {
     min-width: 400px;
     height: 30px;
     max-width: 750px;
-
 }
 
 li {
     background-color: #f55951;
 }
 
-.indexflex{
+.indexflex {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .formpost {
     display: flex;
     justify-content: center;
@@ -144,15 +215,11 @@ li {
     min-width: 400px;
     height: 30px;
     max-width: 750px;
-
-
+    padding-top: 38px;
+    border-color: #edd2cb;
 }
 
-input[type=text] {
-    background-color: #f1e8e6;
 
-    
-}
 
 .uname {
     display: flex;
@@ -164,7 +231,7 @@ input[type=text] {
     padding-left: 4px;
     padding-right: 4px;
     transition: padding 0.1s ease-in-out;
-    
+
 
 
 }
@@ -185,6 +252,7 @@ input[type=text] {
     padding-right: 3px;
     padding-left: 2px;
 
+
 }
 
 .troep {
@@ -196,16 +264,52 @@ input[type=text] {
     max-width: 60%;
     margin-top: 1%;
     padding: 2%;
+    padding-bottom: 7px;
+    margin-bottom: 3px;
 }
+
 
 .next-prev {
-    margin-top: 15px;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.next-prev a {
+    border-style: solid;
+    border-width: 2px;
+    border-color:transparent;
+    padding: 3px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+}
+
+.next-prev a:hover {
+    border-color: #543c52;
+    border-radius: 20px;
+}
+
+.about {
+    margin: auto;
+    color: #543c52;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #edd2cb;    
+    width: 30%;
+    min-width: 400px;
+    max-width: 750px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 }
 
+
 #grad1 {
-    height: 100%;
+
     background-color: #f55951;
     /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom, #543c52, #f55951);
@@ -213,9 +317,9 @@ input[type=text] {
 
 #grad2 {
     height: 100%;
-    background-color: #f55951;
+    background-color: transparent;
     /* For browsers that do not support gradients */
-    background-image: radial-gradient(#af9b96, #543c52);
+    background-image: linear-gradient( 	rgb(84, 60, 82, 1),	rgb(245, 89, 81, 0));
 }
 
 #grad3 {
@@ -229,5 +333,12 @@ input[type=text] {
     height: 100%;
     background-color: #f55951;
     /* For browsers that do not support gradients */
-    background-image: radial-gradient( #f55951,#543c52  );
+    background-image: radial-gradient(#f55951, #543c52);
+}
+
+#grad5 {
+    height: 100%;
+    background-color: #f55951;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom, #543c52, #f55951);
 }

@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<table>
-    <tr valign="top">
-        <h1>User: {{ user.username }}</h1>
+
+    <div class="about">        
+        <div class="pfandname">
+            <div class="pf"><img class="userpagepf" src="{{ user.avatar(64) }}"></div>  
+            <h1>{{ user.username }}</h1>
+        </div>
+
         {% if user.about_me %}<p>{{ user.about_me }}</p>{% endif %}
         {% if user.last_seen %}<p>Last seen on: {{ user.last_seen }}</p>{% endif %}
         <p>{{ user.followers.count() }} followers, {{ user.followed.count() }} following.</p>
@@ -25,17 +29,25 @@
         </p>
         {% endif %}
         
-    </tr>
-</table>
+    </div>
+
+    <div class="post">
+        {% for post in posts %}
+            {% include '_post.html' %}
+        {% endfor %}
+    </div>
+
 <div class="next-prev">
-{% for post in posts %}
-    {% include '_post.html' %}
-{% endfor %}
-{% if prev_url %}
-<a href="{{ prev_url }}">Newer posts</a>
-{% endif %}
-{% if next_url %}
-<a href="{{ next_url }}">Older posts</a>
-{% endif %}
+    <div class="prev">
+        {% if prev_url %}
+        <a href="{{ prev_url }}">Newer Posts</a>
+        {% endif %}
+    </div>
+        {% if next_url %}
+    <div class="next">
+        <a href="{{ next_url }}">Older posts</a>
+        {% endif %}
+    </div>
+</div>	
 {% endblock %}
 </div>

@@ -4,12 +4,12 @@
 	<div class="logo">Welcome {{ current_user.username }}</div>
 	<!--{% if form %}-->
 	<div class="indexflex">
-		<div id="grad1" class="formpost">
+		<div id="grad5" class="formpost">
 		<form action="" method="post">
 			{{ form.hidden_tag() }}
 			<p>
-				{{ form.post.lable }}<br>
-				{{ form.post(cols=32, rows=4) }}<br>
+				{{ form.post.lable }}
+				{{ form.post(cols=32, rows=4) }}
 				{% for error in form.post.errors %}
 				<span style="color: red;">[{{ error }}]</span>
 				{% endfor %}
@@ -26,11 +26,15 @@
 	</div>
 	</div>
 	<div class="next-prev">
-	{% if prev_url %}
-	<a href="{{ prev_url }}">Newer Posts</a>
-	{% endif %}
-	{% if next_url %}
-	<a href="{{ next_url }}">Older posts</a>
-	{% endif %}
+		<div class="prev">
+			{% if prev_url %}
+			<a href="{{ prev_url }}">Newer Posts</a>
+			{% endif %}
+		</div>
+			{% if next_url %}
+		<div class="next">
+			<a href="{{ next_url }}">Older posts</a>
+			{% endif %}
+		</div>	
 	</div>
 {% endblock %}

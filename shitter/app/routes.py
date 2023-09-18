@@ -5,6 +5,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 from app.models import User, Post
 from werkzeug.urls import url_parse
 from datetime import datetime
+import time
 
 ''' This file is used to bind the HTML and the python things together
     ass wel as "route" all the right pages to echother and use the classes and 
@@ -114,7 +115,6 @@ def user(username):
 @login_required
 def edit_profile():
     form = EditProfileForm(current_user.username)
-
     if form.validate_on_submit():
         current_user.username = form.username.data
         current_user.about_me = form.about_me.data
