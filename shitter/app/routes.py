@@ -16,7 +16,7 @@ import time
 @app.before_request
 def before_request():
     if current_user.is_authenticated:
-        current_user.last_seen = datetime.utcnow()
+        current_user.last_seen = datetime.now()
         db.session.commit()
 
 
@@ -93,6 +93,8 @@ def register():
         return redirect(url_for('login'))
     
     return render_template('register.html', title='Register', form=form)
+
+
 
 # the user's profile, with temporarry test posts
 @app.route('/user/<username>')

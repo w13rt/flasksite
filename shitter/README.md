@@ -6,7 +6,10 @@ The use for this has yet to be found.
 
 The main goal is to have it working and looking sorta nice without some `js` bullshit. So far so good
 
-## how to start server
+## How to install
+
+
+## How to start server
 normal
 `flask run`
 

@@ -28,7 +28,6 @@ input[type=button],
 input[type=submit],
 input[type=reset] {
     background-color: #543c52;
-    border: none;
     color: white;
     padding: 4px;
     text-decoration: none;
@@ -37,6 +36,9 @@ input[type=reset] {
     height: 30px;
     margin-top: 4px;
     margin-bottom: 4px;
+    border-style: solid ;
+    border-width: 1px;
+    border-color: #edd2cb;
 }
 
 input:hover {
@@ -304,7 +306,26 @@ li {
     max-width: 750px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
 
+.about a{
+    background-color: #543c52;
+    color: #f1e8e6;
+    padding: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px;
+    height: 30px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-style: solid ;
+    border-width: 1px;
+    border-color: #edd2cb;
+    transition: all 0.1s ease-in-out;
+}
+
+.about a:hover {
+    background-color: #af9b96;
 }
 
 
