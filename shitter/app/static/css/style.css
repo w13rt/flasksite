@@ -28,7 +28,7 @@ input[type=button],
 input[type=submit],
 input[type=reset] {
     background-color: #543c52;
-    color: white;
+    color: #edd2cb;
     padding: 4px;
     text-decoration: none;
     cursor: pointer;
@@ -39,6 +39,8 @@ input[type=reset] {
     border-style: solid ;
     border-width: 1px;
     border-color: #edd2cb;
+    font-family: "Audiowide", sans-serif;
+    transition: all 0.1s ease-in-out;
 }
 
 input:hover {
